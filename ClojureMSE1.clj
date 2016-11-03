@@ -118,7 +118,7 @@
 ;; **
 
 ;; @@
-(def theta1 (first (drop 15000 (iterate #(next-theta % X y 0.01) theta1))))
+(def theta1 (first (drop 15000 (iterate #(next-theta % X y 0.01) initial-theta))))
 theta1
 ;; @@
 ;; =>
@@ -130,7 +130,7 @@ theta1
 ;; **
 
 ;; @@
-(def theta2 (first (drop 30000 (iterate #(next-theta % X y 0.01) theta1))))
+(def theta2 (first (drop 30000 (iterate #(next-theta % X y 0.01) initial-theta))))
 theta2
 ;; @@
 ;; =>
